@@ -1,6 +1,5 @@
 k = 1000000
-#earth = float(input("Enter the size of the Earth you want to see in cm: "))
-earth = 1274200000
+earth = float(input("Enter the size of the Earth you want to see in cm: "))
 scale = (12742000 / earth)
 sun = round(109.25 * earth,2)
 mercury = round(0.38291 * earth,2)
