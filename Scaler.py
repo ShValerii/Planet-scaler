@@ -1,5 +1,6 @@
 k = 1000000
 earth = float(input("Enter the size of the Earth you want to see in cm: "))
+#earth = 1274200000
 scale = (12742000 / earth)
 sun = round(109.25 * earth,2)
 mercury = round(0.38291 * earth,2)
@@ -29,13 +30,24 @@ dmarsjupiter = round((dissunjupiter - dissunmars + mars / 100), 2)
 djupitersaturn = round((dissunsaturn - dissunjupiter + jupiter / 100), 2)
 dsaturnuranus = round((dissunuranus - dissunsaturn + saturn / 100), 2)
 duranusneptune = round((dissunneptune - dissunuranus + uranus / 100), 2)
+
+print("Distance from Sun to Earth is : ",dissunearth,'m')
+print("\nPlanets name and size\n")
+print("1. Mercury - " + str(mercury) + " cm")
+print("2. Venus - " + str(venus) + " cm")
+print("3. Earth - " + str(earth) + " cm")
+print("4. Mars - " + str(mars) + "cm")
+print("5. Jupiter - " + str(jupiter) + " cm")
+print("6. Saturn - " + str(saturn) + " cm")
+print("7. Uranus - " + str(uranus) + " cm")
+print("8. Neptune - " + str(neptune) + " cm")
+
 print("        )")
 print("  Sun    )")
-print(round(sun/100,2),"m","  )",dissunmercury,"m", "(", mercury, "cm", ")", dmercuryvenus,"m", "(", venus, "cm", ")",
-      dvenusearth,"m","(", earth,"cm",")", dearthmars,"m", "(", mars, "cm", ")", dmarsjupiter,"m", "(", jupiter, "cm",
-      ")",djupitersaturn,"m","(", saturn,"cm",")", dsaturnuranus,"m", "(", uranus, "cm", ")", duranusneptune,"m",
-      "(", neptune, "cm", ")","Total:",round(dissunneptune+(neptune/100)+1,0),"m",)
+print(round(sun/100,2),"m","  )",dissunmercury,"m", "( 1 )", dmercuryvenus,"m", "( 2 )",dvenusearth,"m","( 3 )",
+      dearthmars,"m", "( 4 )", dmarsjupiter,"m", "( 5 )",djupitersaturn,"m","( 6 )", dsaturnuranus,"m", "( 7 )",
+      duranusneptune,"m","( 8 )","Total:",round(dissunneptune+(neptune/100)+1,0),"m",)
 print("         )")
 print("        )")
-print("Distance from Sun to Earth is : ",dissunearth,'m')
+
 
